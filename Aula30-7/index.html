@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="https://racefinisher.org/wp-content/uploads/2018/05/cropped-gym-favicon-free-img.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w-full h-screen flex bg-[#18171C] text-white">
+        <div class="w-[50%] h-full flex items-center justify-center">
+            <img width="750px" src="./fit.svg" alt="imagem-animada">
+        </div>
+        <div class="w-[50%] h-full flex items-center justify-center">
+            <div class="w-[500px] h-auto h-[400px] 
+                bg-[#262626] rounded-lg flex flex-col p-[15px]">
+                <div class="w-full flex flex-col">
+                    <h1 class="text-3xl font-bold">Calculadora - IMC</h1>
+                    <div class="w-[150px] h-[4px] bg-[#FF725E] rounded-lg"></div>
+                </div>
+                <div class="w-full flex flex-col pt-[15px] gap-[15px]">
+                    <div class="INPUT w-full flex flex-col">
+                        <label for="altura" class="text-md font-bold">Altura</label>
+                        <div class="w-full flex bg-[#3f3f47] h-[40px] rounded-md">
+                            <div class="w-[10%] h-full flex items-center justify-center">
+                                <i class="fa-solid fa-solid fa-ruler"></i>
+                            </div>
+                            <input type="number" id="altura" class="w-[80%] h-full bg-transparent outline-none">
+                            <div class="w-[10%] flex item-center justify-center">M</div>
+                        </div>
+                    </div>
+                    <div class="INPUT2 w-full flex flex-col">
+                        <label for="peso" class="text-md font-bold">Peso</label>
+                        <div class="w-full flex bg-[#3f3f47] h-[40px] rounded-md">
+                            <div class="w-[10%] h-full flex items-center justify-center">
+                                <i class="fa-solid fa-weight-hanging"></i>
+                            </div>
+                            <input type="number" id="peso" class="w-[80%] h-full bg-transparent outline-none">
+                            <div class="w-[10%] flex item-center justify-center">Kg</div>
+                        </div>
+                    </div>
+                    <button id="botao"
+                        class="w-full h-[40px] flex flex-col justify-center text-md bg-[#FF725E]
+                         font-bold rounded-md cursor-pointer hover:bg-transparent border hover:border-[#FF725E] hover:text-[#FF725E]transition-all duration-300 ease-in-out">Calcular</button>
+                </div>
+                <div class="w-full flex flex-col py-[15px] hidden" id="resultado">
+                    <div class="w-full h-[1px] bg-[#3F3F47]"></div>
+                    <div class="w-full h-[100px] flex">
+                        <div class="w-[35%] h-full flex flex-col items-center
+                         justify-center">
+                            <h1 id="res-imc" class="font-bold text-3xl text-[#FF725E]"></h1>
+                            <p>Seu IMC</p>
+                        </div>
+                        <div class="w-[65%] h-full flex items-center pl-[15px]">
+                            <p id="res-descricao"></p>
+                        </div>
+                    </div>
+                    <div class="w-full h-[1px] bg-[#3F3F47]"></div>
+                </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
