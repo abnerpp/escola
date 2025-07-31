@@ -10,13 +10,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>TopFlyMaster</title>
 </head>
 
-<body>
+<body class="bg-[#18171C]">
+        <nav class="w-full bg-[#262626]/90 backdrop-blur-sm border-b border-[#3f3f47]/50 fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="flex items-center">
+                        <i class="fas fa-dumbbell text-[#FF725E] text-2xl mr-2"></i>
+                        <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FF725E] to-[#FFAA7A]">
+                            TopFlyMaster
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Menu Desktop -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-6">
+                        <a href="./inicio.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Início
+                        </a>
+                        <a href="#" class="text-white bg-[#FF725E]/90 px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Calculadora IMC
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Sobre
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Contato
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Botão Mobile -->
+                <div class="md:hidden">
+                    <button class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <div class="w-full h-screen flex bg-[#18171C] text-white">
         <div class="w-[50%] h-full flex items-center justify-center">
-            <img width="750px" src="./fit.svg" alt="imagem-animada">
+            <img width="650px" src="./fit.svg" alt="imagem-animada">
         </div>
         <div class="w-[50%] h-full flex items-center justify-center">
             <div class="w-[500px] h-auto h-[400px] 
@@ -67,6 +108,12 @@
         </div>
     </div>
     <script src="./script.js"></script>
+    <!-- Botão do WhatsApp -->
+<a href="https://api.whatsapp.com/send?phone=85989252240&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20planos" 
+   target="_blank"
+   class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:bg-[#128C7E] transition duration-300 z-50 animate-bounce">
+   <i class="fab fa-whatsapp text-white text-2xl"></i>
+</a>
 
 </body>
 

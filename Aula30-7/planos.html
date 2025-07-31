@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="https://racefinisher.org/wp-content/uploads/2018/05/cropped-gym-favicon-free-img.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TopFlyMaster - Planos Personalizados</title>
+</head>
+
+<body class="bg-[#18171C] text-white">
+    <!-- Navbar -->
+    <nav class="w-full bg-[#262626]/90 backdrop-blur-sm border-b border-[#3f3f47]/50 fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <i class="fas fa-dumbbell text-[#FF725E] text-2xl mr-2"></i>
+                        <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FF725E] to-[#FFAA7A]">
+                            TopFlyMaster
+                        </span>
+                    </a>
+                </div>
+                
+                <!-- Menu Desktop -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-6">
+                        <a href="./inicio.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Início
+                        </a>
+                        <a href="./index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Calculadora IMC
+                        </a>
+                        <a href="planos.html" class="text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Planos
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Contato
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Botão Login -->
+                <div class="hidden md:block">
+                    <a href="#" class="ml-4 px-4 py-2 border border-transparent rounded-md text-sm font-medium text-white bg-[#FF725E] hover:bg-[#FF6347] transition duration-300">
+                        Login
+                    </a>
+                </div>
+                
+                <!-- Botão Mobile -->
+                <div class="md:hidden">
+                    <button class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#FF725E] to-[#FFAA7A]">Planos</span> Personalizados
+        </h1>
+        <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+            Monte o treino perfeito para seus objetivos. Escolha entre nossos planos ou crie um totalmente personalizado.
+        </p>
+    </section>
+
+    <!-- Planos Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Plano Básico -->
+            <div class="bg-[#262626]/50 backdrop-blur-sm rounded-xl border border-[#3f3f47]/50 overflow-hidden transition duration-500 hover:border-[#FF725E]/30 hover:shadow-lg hover:shadow-[#FF725E]/10">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold">Básico</h3>
+                        <span class="text-[#FF725E] font-bold text-xl">R$ 49,90<span class="text-sm text-gray-400">/mês</span></span>
+                    </div>
+                    <p class="text-gray-300 mb-6">Ideal para quem está começando na jornada fitness</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#FF725E] mr-2"></i>
+                            <span>Treino genérico</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#FF725E] mr-2"></i>
+                            <span>Acesso à calculadora IMC</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#FF725E] mr-2"></i>
+                            <span>3 vídeos de instrução</span>
+                        </li>
+                        <li class="flex items-center text-gray-500">
+                            <i class="fas fa-times text-gray-500 mr-2"></i>
+                            <span>Suporte personalizado</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-[#FF725E] hover:bg-[#FF6347] rounded-lg font-bold transition duration-300">
+                        Assinar Plano
+                    </button>
+                </div>
+            </div>
+
+            <!-- Plano Intermediário (Destaque) -->
+            <div class="bg-gradient-to-b from-[#FF725E]/10 to-[#262626] rounded-xl border border-[#FF725E]/30 overflow-hidden transform hover:scale-[1.02] transition duration-500 shadow-lg shadow-[#FF725E]/10">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold">Intermediário</h3>
+                        <span class="text-[#FFAA7A] font-bold text-xl">R$ 89,90<span class="text-sm text-gray-400">/mês</span></span>
+                    </div>
+                    <p class="text-gray-300 mb-6">Para quem quer resultados mais rápidos</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#FFAA7A] mr-2"></i>
+                            <span>Treino semi-personalizado</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#FFAA7A] mr-2"></i>
+                            <span>Dieta básica</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#FFAA7A] mr-2"></i>
+                            <span>10 vídeos de instrução</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#FFAA7A] mr-2"></i>
+                            <span>Suporte por email</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-gradient-to-r from-[#FF725E] to-[#FFAA7A] hover:from-[#FFAA7A] hover:to-[#FF725E] rounded-lg font-bold transition duration-500">
+                        Assinar Plano
+                    </button>
+                </div>
+            </div>
+
+            <!-- Plano Avançado -->
+            <div class="bg-[#262626]/50 backdrop-blur-sm rounded-xl border border-[#3f3f47]/50 overflow-hidden transition duration-500 hover:border-[#FF725E]/30 hover:shadow-lg hover:shadow-[#FF725E]/10">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold">Avançado</h3>
+                        <span class="text-[#FF725E] font-bold text-xl">R$ 149,90<span class="text-sm text-gray-400">/mês</span></span>
+                    </div>
+                    <p class="text-gray-300 mb-6">Para quem leva fitness a sério</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#FF725E] mr-2"></i>
+                            <span>Treino 100% personalizado</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#FF725E] mr-2"></i>
+                            <span>Dieta personalizada</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#FF725E] mr-2"></i>
+                            <span>Acesso completo aos vídeos</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-[#FF725E] mr-2"></i>
+                            <span>Suporte 24/7</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-[#FF725E] hover:bg-[#FF6347] rounded-lg font-bold transition duration-300">
+                        Assinar Plano
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monte Seu Treino Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="bg-[#262626]/50 backdrop-blur-sm rounded-xl border border-[#3f3f47]/50 p-6 md:p-8">
+            <h2 class="text-3xl font-bold mb-6 text-center">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#FF725E] to-[#FFAA7A]">Monte Seu</span> Treino
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Formulário -->
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Seu Nome</label>
+                            <input type="text" class="w-full bg-[#3f3f47]/50 border border-[#3f3f47] rounded-lg px-4 py-3 focus:border-[#FF725E] focus:outline-none transition duration-300">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Seu Objetivo</label>
+                            <select class="w-full bg-[#3f3f47]/50 border border-[#3f3f47] rounded-lg px-4 py-3 focus:border-[#FF725E] focus:outline-none transition duration-300">
+                                <option>Emagrecimento</option>
+                                <option>Hipertrofia (Massa Muscular)</option>
+                                <option>Condicionamento Físico</option>
+                                <option>Força</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Nível de Experiência</label>
+                            <div class="grid grid-cols-3 gap-2">
+                                <label class="flex items-center">
+                                    <input type="radio" name="nivel" class="mr-2 text-[#FF725E] focus:ring-[#FF725E]">
+                                    <span>Iniciante</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="nivel" class="mr-2 text-[#FF725E] focus:ring-[#FF725E]">
+                                    <span>Intermediário</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="nivel" class="mr-2 text-[#FF725E] focus:ring-[#FF725E]">
+                                    <span>Avançado</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Dias por Semana</label>
+                            <input type="range" min="1" max="7" value="3" class="w-full h-2 bg-[#3f3f47] rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[#FF725E]">
+                            <div class="flex justify-between text-xs text-gray-400 mt-1">
+                                <span>1 dia</span>
+                                <span>2 dia</span>
+                                <span>3 dia</span>
+                                <span>4 dia</span>
+                                <span>5 dia</span>
+                                <span>6 dia</span>
+                                <span>7 dias</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Equipamentos Disponíveis</label>
+                            <div class="grid grid-cols-2 gap-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2 rounded text-[#FF725E] focus:ring-[#FF725E]">
+                                    <span>Peso Livre</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2 rounded text-[#FF725E] focus:ring-[#FF725E]">
+                                    <span>Máquinas</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2 rounded text-[#FF725E] focus:ring-[#FF725E]">
+                                    <span>Banda Elástica</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox" class="mr-2 rounded text-[#FF725E] focus:ring-[#FF725E]">
+                                    <span>Nenhum</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Observações</label>
+                            <textarea rows="3" class="w-full bg-[#3f3f47]/50 border border-[#3f3f47] rounded-lg px-4 py-3 focus:border-[#FF725E] focus:outline-none transition duration-300"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#FF725E] to-[#FFAA7A] hover:from-[#FFAA7A] hover:to-[#FF725E] rounded-lg font-bold transition duration-500 shadow-lg hover:shadow-[#FF725E]/30">
+                            Gerar Treino Personalizado
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Preview do Treino -->
+                <div>
+                    <div class="bg-[#3f3f47]/30 rounded-lg p-6 h-full">
+                        <h3 class="text-xl font-bold mb-4 text-center">Seu Treino Personalizado</h3>
+                        <div class="space-y-4">
+                            <div class="bg-[#3f3f47]/50 rounded-lg p-4">
+                                <h4 class="font-bold text-[#FFAA7A] mb-2">Segunda-feira - Peito e Tríceps</h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex justify-between">
+                                        <span>Supino Reto</span>
+                                        <span class="text-gray-400">4x12</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span>Supino Inclinado</span>
+                                        <span class="text-gray-400">3x10</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span>Tríceps Corda</span>
+                                        <span class="text-gray-400">3x15</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-[#3f3f47]/50 rounded-lg p-4">
+                                <h4 class="font-bold text-[#FFAA7A] mb-2">Quarta-feira - Costas e Bíceps</h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex justify-between">
+                                        <span>Barra Fixa</span>
+                                        <span class="text-gray-400">4x8</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span>Remada Curvada</span>
+                                        <span class="text-gray-400">3x10</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span>Rosca Direta</span>
+                                        <span class="text-gray-400">3x12</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-[#3f3f47]/50 rounded-lg p-4">
+                                <h4 class="font-bold text-[#FFAA7A] mb-2">Sexta-feira - Pernas</h4>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex justify-between">
+                                        <span>Agachamento Livre</span>
+                                        <span class="text-gray-400">4x10</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span>Leg Press</span>
+                                        <span class="text-gray-400">3x12</span>
+                                    </li>
+                                    <li class="flex justify-between">
+                                        <span>Panturrilha</span>
+                                        <span class="text-gray-400">4x20</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#262626] py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-dumbbell text-[#FF725E] text-2xl mr-2"></i>
+                        <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FF725E] to-[#FFAA7A]">
+                            TopFlyMaster
+                        </span>
+                    </div>
+                    <p class="text-gray-400 mt-2 text-sm">
+                        Transformando vidas através do fitness.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        Termos
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        Privacidade
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        Contato
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-[#3f3f47] text-center text-gray-500 text-sm">
+                &copy; 2025 TopFlyMaster. Saúde é o que interessa!
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Estilo personalizado para o range input */
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #FF725E;
+            cursor: pointer;
+        }
+        
+        /* Animação para cards de planos */
+        .plan-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+    <!-- Botão do WhatsApp -->
+<a href="https://api.whatsapp.com/send?phone=85989252240&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20planos" 
+   target="_blank"
+   class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:bg-[#128C7E] transition duration-300 z-50 animate-bounce">
+   <i class="fab fa-whatsapp text-white text-2xl"></i>
+</a>
+</body>
+</html>

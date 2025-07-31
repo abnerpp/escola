@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="https://racefinisher.org/wp-content/uploads/2018/05/cropped-gym-favicon-free-img.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TopFlyMaster - Sua Saúde em Primeiro Lugar</title>
+</head>
+
+<body class="bg-[#18171C] text-white">
+    <!-- Navbar -->
+    <nav class="w-full bg-[#262626]/90 backdrop-blur-sm border-b border-[#3f3f47]/50 fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="./inicio.html" class="flex items-center">
+                        <i class="fas fa-dumbbell text-[#FF725E] text-2xl mr-2"></i>
+                        <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FF725E] to-[#FFAA7A]">
+                            TopFlyMaster
+                        </span>
+                    </a>
+                </div>
+                
+                <!-- Menu Desktop -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-6">
+                        <a href="./inicio.html" class="text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Início
+                        </a>
+                        <a href="./index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Calculadora IMC
+                        </a>
+                        <a href="./planos.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Planos
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">
+                            Contato
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Botão Login -->
+                <div class="hidden md:block">
+                    <a href="#" class="ml-4 px-4 py-2 border border-transparent rounded-md text-sm font-medium text-white bg-[#FF725E] hover:bg-[#FF6347] transition duration-300">
+                        Login
+                    </a>
+                </div>
+                
+                <!-- Botão Mobile -->
+                <div class="md:hidden">
+                    <button class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+                    Transforme seu <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#FF725E] to-[#FFAA7A]">corpo</span>, 
+                    mude sua <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#FFAA7A] to-[#FF725E]">vida</span>
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 max-w-lg">
+                    Acompanhe sua saúde e fitness com nossas ferramentas especializadas. Comece calculando seu IMC para entender melhor seu corpo.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="./index.html" class="px-6 py-3 bg-gradient-to-r from-[#FF725E] to-[#FFAA7A] hover:from-[#FFAA7A] hover:to-[#FF725E] rounded-lg font-bold text-center transition duration-500 shadow-lg hover:shadow-[#FF725E]/30">
+                        Calcular IMC
+                    </a>
+                    <a href="./planos.html" class="px-6 py-3 border border-[#FF725E] text-[#FF725E] hover:bg-[#FF725E]/10 rounded-lg font-bold text-center transition duration-300">
+                        Nossos Planos
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" 
+                     alt="Pessoa se exercitando" 
+                     class="rounded-xl shadow-2xl w-full max-w-md lg:max-w-xl border-2 border-[#FF725E]/20">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 bg-gradient-to-b from-[#262626]/30 to-[#18171C] px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">
+                Nossas <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#FF725E] to-[#FFAA7A]">Ferramentas</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-[#262626]/50 backdrop-blur-sm p-6 rounded-xl border border-[#3f3f47]/50 hover:border-[#FF725E]/30 transition duration-300">
+                    <div class="w-14 h-14 bg-[#FF725E]/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-calculator text-[#FF725E] text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Calculadora IMC</h3>
+                    <p class="text-gray-300">
+                        Calcule seu Índice de Massa Corporal e descubra se você está no peso ideal para sua altura.
+                    </p>
+                    <a href="./index.html" class="mt-4 inline-flex items-center text-[#FF725E] hover:text-[#FFAA7A] transition duration-300">
+                        Calcular agora <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-[#262626]/50 backdrop-blur-sm p-6 rounded-xl border border-[#3f3f47]/50 hover:border-[#FF725E]/30 transition duration-300">
+                    <div class="w-14 h-14 bg-[#FF725E]/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-utensils text-[#FF725E] text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Dietas Personalizadas</h3>
+                    <p class="text-gray-300">
+                        Planos alimentares adaptados ao seu biotipo e objetivos, criados por nutricionistas.
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center text-[#FF725E] hover:text-[#FFAA7A] transition duration-300">
+                        Saiba mais <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-[#262626]/50 backdrop-blur-sm p-6 rounded-xl border border-[#3f3f47]/50 hover:border-[#FF725E]/30 transition duration-300">
+                    <div class="w-14 h-14 bg-[#FF725E]/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-dumbbell text-[#FF725E] text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Treinos Exclusivos</h3>
+                    <p class="text-gray-300">
+                        Programas de treino para todos os níveis, desde iniciantes até atletas avançados.
+                    </p>
+                    <a href="#" class="mt-4 inline-flex items-center text-[#FF725E] hover:text-[#FFAA7A] transition duration-300">
+                        Começar <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto bg-gradient-to-r from-[#FF725E] to-[#FFAA7A] rounded-2xl p-8 md:p-12 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Pronto para transformar seu corpo?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Junte-se a milhares de pessoas que já estão mudando suas vidas com nossos programas.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="./planos.html" class="px-6 py-3 bg-white text-[#FF725E] rounded-lg font-bold hover:bg-gray-100 transition duration-300">
+                    Começar Agora
+                </a>
+                <a href="#" class="px-6 py-3 border border-white text-white rounded-lg font-bold hover:bg-white/10 transition duration-300">
+                    Fale Conosco
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#262626] py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-dumbbell text-[#FF725E] text-2xl mr-2"></i>
+                        <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FF725E] to-[#FFAA7A]">
+                            TopFlyMaster
+                        </span>
+                    </div>
+                    <p class="text-gray-400 mt-2 text-sm">
+                        Sua saúde em primeiro lugar.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        Termos de Serviço
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        Política de Privacidade
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        Contato
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-[#3f3f47] text-center text-gray-500 text-sm">
+                &copy; 2025 TopFlyMaster. Saúde é o que interessa!
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Animação para elementos flutuantes */
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        /* Efeito hover para cards */
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 114, 94, 0.1);
+        }
+    </style>
+    <!-- Botão do WhatsApp -->
+<a href="https://api.whatsapp.com/send?phone=85989252240&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20planos" 
+   target="_blank"
+   class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:bg-[#128C7E] transition duration-300 z-50 animate-bounce">
+   <i class="fab fa-whatsapp text-white text-2xl"></i>
+</a>
+</body>
+</html>
