@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
     <title>TopFlyMaster</title>
 </head>
 
@@ -74,7 +81,7 @@
                                 <i class="fa-solid fa-solid fa-ruler"></i>
                             </div>
                             <input type="number" id="altura" class="w-[80%] h-full bg-transparent outline-none" placeholder="Ex: 1.75">
-                            <div class="w-[10%] flex item-center justify-center">M</div>
+                            <div class="w-[10%] flex items-center justify-center">M</div>
                         </div>
                     </div>
                     <div class="INPUT2 w-full flex flex-col">
@@ -84,7 +91,7 @@
                                 <i class="fa-solid fa-weight-hanging"></i>
                             </div>
                             <input type="number" id="peso" class="w-[80%] h-full bg-transparent outline-none" placeholder="Ex: 68.5">
-                            <div class="w-[10%] flex item-center justify-center">Kg</div>
+                            <div class="w-[10%] flex items-center justify-center">Kg</div>
                         </div>
                     </div>
                     <button id="botao"
